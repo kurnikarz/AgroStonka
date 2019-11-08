@@ -11,29 +11,22 @@ a {
 }
 
 body {
-    background-color: #3a4a58;
     font-family: 'Lato', sans-serif;
-    color: #00FF66;
+    background-image: url("img/tlo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#99FF99;
 }
 
 .container {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+
 }
 
-
-.container .logo .logo-text h1{
-    color: #5c3317;
-}
-
-.container .logo .logo-text p{
-    color: #ffffff;
-}
-
-.container .logo .logo-text span{
-    color: #33cc00;
+.container nav ul span {
+    color: #336633;
 }
 
 nav {
@@ -48,6 +41,7 @@ nav {
 nav ul {
     list-style-type: none;
     height: 30%;
+    text-align: center;
 }
 
 nav ul li {
@@ -55,6 +49,7 @@ nav ul li {
     padding: 20px;
     border-right: 2px dotted #238E23;
     font-size: large;
+
 }
 
 nav ul li:hover {
@@ -64,8 +59,15 @@ nav ul li:hover {
 }
 
 nav ul li:first-child {
-    border-left: 2px dotted #238E23;
+    cursor: pointer;
+    float: left;
+    border: none;
+    margin-top: -0.6%;
+    background-color: #93DB70;
+}
 
+nav ul li:last-child {
+    border: none;
 }
 
 header {
