@@ -36,6 +36,7 @@ nav {
     margin-top: 2%;
     border: 2px solid #238E23;
     border-radius: 10px;
+    text-transform: uppercase;
 }
 
 nav ul {
@@ -94,30 +95,59 @@ article p {
     text-align: center;
 }
 
-.newsy {
+header {
+    text-align: center;
+}
+
+article {
     width: 100%;
     text-align: center;
     margin-top: 5%;
 }
 
-.newsy h2 {
+article h2 {
     color: #238E23;
 }
 
-.newsy .card {
+article .card {
     width: 400px;
     background-color: #CCFFCC;
     display: inline-block;
     margin-left: 2%;
     margin-top: 1%;
     border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+
 }
 
-.newsy .card img {
+article .card:hover {
+    transform: scale(0.9);
+}
+
+article .card img {
     width: 400px;
     opacity: 1;
 }
 
-.newsy .card p {
+article .card p {
     color: #000000;
+}
+
+article h3, p {
+    color: #000000;
+    text-align: left;
+}
+
+.maczniak {
+    text-align: left;
+    color: #ffffff;
+}
+
+.maczniak li {
+    margin-left: 50px;
+}
+
+img {
+    width: 100%;
 }
