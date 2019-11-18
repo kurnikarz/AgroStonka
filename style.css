@@ -16,12 +16,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color:#99FF99;
+
 }
 
 .container {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 
 }
 
@@ -150,4 +152,29 @@ article h3, p {
 
 img {
     width: 100%;
+}
+
+header .header-napis {
+    color:#99FF99;
+}
+
+footer {
+    width: 100%;
+    background-color: #93DB70;
+    text-align: center;
+    color: #000000;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+.produkcja {
+    width: 30%;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.produkcja p {
+    color: #ffffff;
 }
