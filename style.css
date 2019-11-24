@@ -23,13 +23,17 @@ body {
 
 }
 
-
 .container {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
+    background-color: rgba(115, 83, 61, 0.6);
+    border: 4px solid #3e2723;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 30px;
 }
 
 .container nav ul span {
@@ -37,13 +41,15 @@ body {
 }
 
 nav {
-    width: 100%;
+    width: 95%;
     background-color: #93DB70;
     padding: 10px;
     margin-top: 2%;
     border: 2px solid #238E23;
     border-radius: 10px;
     text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav ul {
@@ -76,6 +82,15 @@ nav ul li:first-child {
 
 nav ul li:last-child {
     border: none;
+}
+
+nav ul li a .logo {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+nav ul li a .log {
+    color: #238E23;
 }
 
 header {
@@ -139,6 +154,7 @@ article .card img {
 
 article .card p {
     color: #000000;
+    padding: 10px;
 }
 
 article h3, p {
@@ -164,12 +180,14 @@ header .header-napis {
 }
 
 footer {
-    width: 99%;
+    width: 95%;
     background-color: #93DB70;
     text-align: center;
     color: #000000;
     padding: 10px;
     margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .produkcja {
@@ -237,6 +255,7 @@ table {
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
+    width: 60%;
 }
 
 table tr th {
