@@ -35,10 +35,10 @@ function checkStringAndFocus(obj, msg) {
 }
 
 function validate(form) {
-    checkStringAndFocus(form.elements["e_imie"], "złe imie");
-    checkStringAndFocus(form.elements["e_nazwisko"], "złe nazwisko");
-    checkStringAndFocus(form.elements["e_wiadomosc"], "zła wiadomość");
-    checkStringAndFocus(form.elements["e_mail"], "zły email");
+    checkStringAndFocus(form.elements["imie"], "złe imie");
+    checkStringAndFocus(form.elements["nazwisko"], "złe nazwisko");
+    checkStringAndFocus(form.elements["wiadomosc"], "zła wiadomość");
+    checkStringAndFocus(form.elements["email"], "zły email");
 }
 
 function checkEmail(str) {
