@@ -23,11 +23,22 @@ function checkString(str, msg) {
     else return true;
 }
 
+function checkStringAndFocus(obj, msg) {
+    var str = obj.value;
+    var errorFieldName = "e_" + obj.name.substr(2, obj.name.lenght);
+    if (isWhiteSpace(str) || isEmpty(str)) {
+        document.getElementById(errorFieldName).innerHTML = msg;
+        obj.focus();
+        return false;
+    }
+    else return true;
+}
+
 function validate(form) {
-    checkString(form.elements["imie"].value, "złe imie");
-    checkString(form.elements["nazwisko"].value, "złe nazwisko");
-    checkString(form.elements["wiadomosc"].value, "zła wiadomość");
-    checkEmail(form.elements["email"].value, "zły email");
+    checkStringAndFocus(form.elements["e_imie"], "złe imie");
+    checkStringAndFocus(form.elements["e_nazwisko"], "złe nazwisko");
+    checkStringAndFocus(form.elements["e_wiadomosc"], "zła wiadomość");
+    checkStringAndFocus(form.elements["e_mail"], "zły email");
 }
 
 function checkEmail(str) {

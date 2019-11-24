@@ -108,10 +108,10 @@
         <h1>Skontaktuj się z nami</h1>
         <div class="rejestracja">
             <form>
-                <label>Imię: <br><input type="text" name="imie"></label>
-                <label>Nazwisko: <br><input type="text" name="nazwisko"></label>
-                <label>Email: <br><input type="text" name="email"></label>
-                <label>Wiadomość: <br><textarea name="wiadomosc" id="wiado" cols="30" rows="10"></textarea></label><br>
+                <label>Imię: <br><input type="text" name="imie"></label><br><span class="err" id="e_imie" > </span><br>
+                <label>Nazwisko: <br><input type="text" name="nazwisko"></label><br><span class="err" id="e_nazwisko" > </span><br>
+                <label>Email: <br><input type="text" name="email"></label><br><span class="err" id="e_email" > </span><br>
+                <label>Wiadomość: <br><textarea name="wiadomosc" id="wiado" cols="30" rows="10"></textarea></label><br><span class="err" id="e_wiadomosc" > </span><br>
                 <input type="submit" value="Wyślij!" onclick="validate(this.form);">
             </form>
         </div>
