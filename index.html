@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>AgroStonka</title>
@@ -7,36 +7,125 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
 
-         <div class="logo">
-             <a href="index.html">
-                 <img src="img/stonka.png" alt="Stonka" width="200" height="177">
-                <div class="logo-text">
-                     <h1>Agro<span>Stonka</span></h1>
-                     <p>Wszystko co musisz wiedzieć o farmerstwie</p>
-                </div>
-             </a>
-         </div>
+    <div class="container">
         <nav>
             <ul>
-                <li><a href="#">STRONA GŁÓWNA</a></li>
-                <li><a href="#">LOREM IIPSUM</a></li>
-                <li><a href="#">LOREM IIPSUM</a></li>
-                <li><a href="#">LOREM IIPSUM</a></li>
-                <li><a href="#">LOREM IIPSUM</a></li>
-                <li><a href="#">LOREM IIPSUM</a></li>
-
+                <li><a href="index.html">Agro<span>Stonka</span></a></li>
+                <li><a href="rosliny.html">rośliny</a></li>
+                <li><a href="zwierzeta.html">zwierzęta</a></li>
+                <li><a href="maszyny.html">maszyny</a></li>
             </ul>
         </nav>
     <header>
-        <img src="img/ciagnik.jpg" alt="Ciągnik">
-        <article>
-            <h2>Witaj na stronie poświęconej agrobiznesowi</h2><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod nibh finibus ipsum laoreet, sed sagittis orci tristique. Donec quis consectetur mi. Nunc sed augue id felis feugiat fringilla vestibulum luctus tortor. Morbi quis turpis tempus, ullamcorper turpis non, malesuada mi. Nulla in suscipit purus. Nam blandit ex aliquet convallis dignissim. Ut porta, nulla a auctor ornare, elit leo rutrum nunc, vel tempor urna mi et odio. Suspendisse vulputate nisl quis ante gravida semper. Pellentesque id turpis in mauris dictum venenatis id non arcu.
-Donec vitae urna nibh. Aenean eu ipsum posuere, fermentum arcu non, consequat ligula. Sed condimentum dolor quam, vel luctus nulla vehicula quis. Vestibulum erat enim, facilisis at nulla vel, feugiat varius neque. Cras vel massa tempus, pretium tortor eget, pulvinar erat. Mauris at massa pharetra, sodales mauris ut, blandit sapien. In hac habitasse platea dictumst.</p>
-        </article>
+            <h1>Witaj na stronie poświęconej portalowi rolniczemu</h1><br>
+            <p class="header-napis">Portal rolniczy AgroStonka to najświeższe wiadomości rolnicze i fachowe artykuły. Produkcja rolna, aktualne cenniki, technika rolnicza, prawo i agrobiznes. znajdziesz newsy o rolnictwie: dotacje, ceny rolnicze</p>
     </header>
+        <article>
+            <h2>Najświeższe wiadomości ze świata rolnictwa</h2>
+            <a href="news1.html">
+                <div class="card">
+                    <img src="img/news1.jpg" alt="Pierwszy news">
+                        <p>Rolnictwo dzięki nowym technologiom, innowacjom i po części za sprawą nowych restrykcyjnych przepisów, zmienia się na naszych oczach. W tych zmianach uczestniczy i nakreśla kierunki         rozwoju rolnictwa także firma BASF. Stara się przy tym prowadzić biznes odpowiedzialny społecznie, o czym mówiono na Konferencji BASF Media Event, która odbyła się 10 października w Nunhem (Holandia).</p>
+            </div>
+            </a>
+
+            <a href="news2.html">
+            <div class="card">
+                <img src="img/news2.jpg" alt="Drugi news">
+                <p>Tegoroczna, VII edycja konferencji "Farmera" Narodowe Wyzwania w Rolnictwie ponownie cieszyła się ogromnym zainteresowaniem. W sumie w trwającym przez cały dzień kilkudziesięciu wykładom, prezentacjom i debatom przysłuchiwało się ponad 1200 osób. Zabaczcie jak to wyglądało w obiektywie.</p>
+            </div>
+            </a>
+            <a href="news3.html">
+            <div class="card">
+                <img src="img/news3.jpg" alt="Trzeci news">
+                <p>Bramy bioasekuracyjne dostępne są na polskim rynku już od 3 lat. Daniel Wyczółkowski z firmy Unidoz mówi w rozmowie z naszym portalem o zainteresowaniu rolników tą technologią, oraz możliwościach skorzystania z dofinansowania na zakup bram</p>
+            </div>
+            </a>
+        </article>
+        <h1>TABELKI</h1><br>
+        <table>
+            <tr>
+                <th rowspan="2">Wyszczególnienie</th>
+                <th>Bardzo ufam</th>
+                <th>ufam</th>
+                <th>Nie ufam</th>
+                <th>Bardzo nie ufam</th>
+                <th colspan="2">Ogółem</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>N</td>
+                <td>%</td>
+            </tr>
+            <tr>
+                <td>Banki komercyjne</td>
+                <td class="kolor1">2,3%</td>
+                <td class="kolor4">46,0%</td>
+                <td class="kolor3">33,3%</td>
+                <td class="kolor2">18,4%</td>
+                <td>741</td>
+                <td>100,0%</td>
+            </tr>
+
+            <tr>
+                <td>Narodowy Bank Polski</td>
+                <td class="kolor2">12,9%</td>
+                <td class="kolor4">62,7%</td>
+                <td class="kolor2">15,4%</td>
+                <td class="kolor2">9,0%</td>
+                <td>837</td>
+                <td>100,0%</td>
+            </tr>
+
+            <tr>
+                <td>Sejm</td>
+                <td class="kolor1">2,7%</td>
+                <td class="kolor2">19,4%</td>
+                <td class="kolor3">39,9%</td>
+                <td class="kolor3">37,9%</td>
+                <td>854</td>
+                <td>100,0%</td>
+            </tr>
+
+            <tr>
+                <td>Prezydent</td>
+                <td class="kolor2">11,8%</td>
+                <td class="kolor3">38,9%</td>
+                <td class="kolor2">28,8%</td>
+                <td class="kolor1">20,4%</td>
+                <td>846</td>
+                <td>100,0%</td>
+            </tr>
+        </table>
+        <br>
+        Źródło: <a href="https://predictivesolutions.pl/">predictivesolutions.pl</a><br><br>
+        <hr>
+        <h1>Skontaktuj się z nami</h1>
+        <div class="rejestracja">
+            <form>
+                <label>Imię: <br><input type="text" name="imie"></label>
+                <label>Nazwisko: <br><input type="text" name="nazwisko"></label>
+                <label>Email: <br><input type="text" name="email"></label>
+                <label>Wiadomość: <br><textarea name="wiadomosc" id="wiado" cols="30" rows="10"></textarea></label><br>
+                <input type="submit" value="Wyślij!" onclick="validate(this.form);">
+            </form>
+        </div>
+
     </div>
+    <footer>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                     src="http://jigsaw.w3.org/css-validator/images/vcss"
+                     alt="Valid CSS!" />
+            </a>
+        </p>
+        Copyright by &copy; Artur Dymkowski
+    </footer>
+    <script src="check-form.js"></script>
 </body>
 </html>
