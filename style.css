@@ -3,6 +3,10 @@ a {
     color: #ffffff;
 }
 
+a:visited {color:#ffffff;}
+a:hover {}
+a:active {}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +22,7 @@ body {
     color:#99FF99;
 
 }
+
 
 .container {
     width: 80%;
@@ -112,7 +117,7 @@ article h2 {
 }
 
 article .card {
-    width: 400px;
+    width: 300px;
     background-color: #CCFFCC;
     display: inline-block;
     margin-left: 2%;
@@ -120,7 +125,7 @@ article .card {
     border-radius: 20px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
-
+    vertical-align: top;
 }
 
 article .card:hover {
@@ -128,7 +133,7 @@ article .card:hover {
 }
 
 article .card img {
-    width: 400px;
+    width: 300px;
     opacity: 1;
 }
 
@@ -159,22 +164,155 @@ header .header-napis {
 }
 
 footer {
-    width: 100%;
+    width: 99%;
     background-color: #93DB70;
     text-align: center;
     color: #000000;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
+    margin-bottom: 0;
 }
 
 .produkcja {
-    width: 30%;
+    width: 300px;
     cursor: pointer;
     display: inline-block;
     text-align: center;
+    vertical-align: top;
+    margin-left: 2%;
+    transition: all 0.2s ease-in-out;
+}
+
+.produkcja:hover {
+   opacity: 0.7;
 }
 
 .produkcja p {
     color: #ffffff;
+}
+
+.naglowek-rosliny {
+    color: #000000;
+}
+
+.text-rosliny {
+    color: #ffffff;
+}
+
+.galeria-roslin-naglowek {
+    margin-top: 3%;
+    color: #99FF99;
+    position: relative;
+    overflow: hidden;
+}
+
+hr {
+
+    height: 5px;
+    background-color: #336633;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+figure{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1%;
+    width: 450px;
+}
+
+figure img {
+    height: 300px;
+
+}
+
+figure figcaption {
+    color: #000000;
+}
+
+table {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+
+table tr th {
+    padding: 0 10px;
+    border: 1px solid #000000;
+    color: #006600;
+}
+
+table tr td {
+    padding: 0 10px;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+table tr .kolor1 {
+    background-color: #FFCDD2;
+}
+
+table tr .kolor2 {
+    background-color: #E57373;
+}
+
+table tr .kolor3 {
+    background-color: #E53935;
+}
+
+table tr .kolor4 {
+    background-color: #B71C1C;
+}
+
+.rejestracja {
+    width: 60%;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+form {
+    font-size: 24px;
+    text-align: left;
+}
+
+input[type=text],
+input[type=password], textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #efefef;
+    color: #666666;
+    border: 2px solid #dddddd;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus{
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+    box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+    border: 2px solid #a5cda5;
+    background-color: #e9f3e9;
+}
+
+input[type=submit] {
+    width: 300px;
+    background-color: #36b03c;
+    color: #ffffff;
+    padding: 15px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+input[type=submit]:hover {
+    background-color: #37b93d;
 }
